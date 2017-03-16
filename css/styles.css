@@ -49,13 +49,16 @@ div + p {
 
 /* ---- Form Styling ---- */
 
-input {
+input,
+select {
 	background: #eff0f1;
 	border-radius: 5px;
 	border: none;
-	padding: 10px;
+	padding: 10px 0;
 	display: block;
 	margin-bottom: .8em;
+	width: 100%;
+	margin-top: 5px;
 }
 
 fieldset {

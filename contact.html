@@ -1,1 +1,77 @@
-index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Eric Crosby's Project #2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Podkova:400,700" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>The Code Review</h1>
+	</header>
+	<div id="container" class="font">
+		<h2>Signup for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+	
+		<form action="contact.html" method="post">
+			<fieldset id="contact">
+				<legend>Contact Information</legend>
+
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="user_full_name" required>
+
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="user_email" required>
+
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="user_phone_number">
+
+				<label for="address">Street Address</label>
+				<input type="text" id="address" name="user_address">
+
+				<label for="city">City</label>
+				<input type="text" id="city" name="user_city">
+
+				<label for="state">State</label>
+				<select id="state" name="user_state">
+					<option value="Choose State" selected>Choose State</option>
+					<option value="Alabama">Alabama</option>
+					<option value="Florida">Florida</option>
+					<option value="Georgia">Georgia</option>
+					<option value="North Carolina">North Carolina</option>
+					<option value="South Carolina">South Carolina</option>
+					<option value="Tennessee">Tennessee</option>
+				</select>
+				
+				<label for="zip">Zip Code</label>
+				<input type="number" id="zip" name="user_zip_code">
+
+
+			</fieldset>
+
+			<fieldset id="newsletter">
+				<legend>Newsletter</legend>
+				<p class="font">Select the newsletters you would like to recieve</p>
+				<input type="checkbox" name="newsletter" value="html_news">HTML News<br>
+				<input type="checkbox" name="newsletter" value="css">CSS News<br>
+				<input type="checkbox" name="newsletter" value="jscript_news">Javascript News
+				
+				<p>Newsletter format</p>
+				<input type="radio" name="format" value="html">HTML<br>
+				<input type="radio" name="format" value="plain">Plain text
+				
+				<label for="other_topics">Other topics you'd like to hear about</p>
+				<input type="textarea" id="other_topics" name="other_topics">
+
+				<input type="submit" value="Sign Up" class="button font">
+			</fieldset>
+		</form>
+		<footer>
+			<p>Copyright The Code Review</p>
+		</footer>
+	</div>
+</body>
+</html>

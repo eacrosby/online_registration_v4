@@ -1,0 +1,75 @@
+/* ---- green button - #4EBBB5 ---- */
+/* ---- input areas - #EFF0F1 ---- */
+/* ---- top header - #2D3945 ---- */
+
+/* ---- Page Styling ---- */
+
+#container {
+	width: 98%;
+	margin: 0 auto;
+}
+
+header {
+	background: #2d3945;
+	color: white;
+	margin-top: 0;
+	padding: .5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: .8em;
+}
+
+h2 {
+	color: #2d3945;
+	text-align: center;
+	margin-top: .5em;
+	font-size: 1.2em;
+}
+
+h2 + p {
+	text-align: center;
+}
+
+div + p {
+	border-bottom: 2px solid #2d3945;
+}
+
+.font {
+	font-family: 'Podkova', serif;
+	color: #b5b5b5;
+	font-size: 1em;
+}
+
+#contact,
+#newsletter {
+	border-top: solid 1px #2d3945;
+	margin-top: 4px;
+}
+
+/* ---- Form Styling ---- */
+
+input {
+	background: #eff0f1;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	display: block;
+	margin-bottom: .8em;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	color: #2d3945;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+.button {
+	background: #4EBBB5;
+	color: white;
+	width: 100%;
+}

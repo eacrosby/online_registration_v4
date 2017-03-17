@@ -125,3 +125,32 @@ input[type="radio"] {
 select:selected {
 	color: #fff;
 }
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+	#container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		display: inline-block;
+		width: 75%;
+		float: right;
+	}
+
+	/* 
+	label:not("other_topics") {
+		float: left;
+	}
+	*/
+
+	textarea {
+		width: 100%;
+	}
+
+}

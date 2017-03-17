@@ -4,26 +4,40 @@
 
 /* ---- Page Styling ---- */
 
+* {
+	box-sizing: border-box;
+}
+
 #container {
 	width: 98%;
 	margin: 0 auto;
 }
 
+hr {
+	width: 96%;
+	border: solid 3px #2d3945;
+	margin: 1px auto;
+}
+
 header {
 	background: #2d3945;
-	color: white;
 	margin-top: 0;
 	padding: .5em;
+}
+
+h1 {
+	color: #fff;
+	font-size: 2em;
+	font-weight: 400;
+	font-family: 'Rokkitt', serif;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 400;
-	font-size: .8em;
 }
 
 h2 {
 	color: #2d3945;
 	text-align: center;
-	margin-top: .5em;
+	margin-top: 1.5em;
 	font-size: 1.2em;
 }
 
@@ -36,29 +50,42 @@ div + p {
 }
 
 .font {
-	font-family: 'Podkova', serif;
+	font-family: 'Rokkitt', serif;
 	color: #b5b5b5;
 	font-size: 1em;
 }
 
 #contact,
 #newsletter {
-	border-top: solid 1px #2d3945;
 	margin-top: 4px;
+}
+
+footer {
+	margin: 0 auto;
+	width:100%;
+	text-align: center;
 }
 
 /* ---- Form Styling ---- */
 
-input,
-select {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+select,
+textarea {
 	background: #eff0f1;
 	border-radius: 5px;
 	border: none;
-	padding: 10px 0;
+	padding: 10px 15px;
 	display: block;
-	margin-bottom: .8em;
+	margin: 5px 0 .8em;
 	width: 100%;
-	margin-top: 5px;
+	font-family: 'Rokkitt', serif;
+}
+
+select {
+	height: 38px;
 }
 
 fieldset {
@@ -69,10 +96,32 @@ legend {
 	color: #2d3945;
 	font-size: 1.2em;
 	font-weight: 700;
+	padding-top: 1em;
+	border-top: solid 2px #2d3945;
+	width: 100%;
 }
 
-.button {
+input:focus,
+select:focus,
+textarea:focus {
+	border: 1px solid #2D3945;
+	text-align: left;
+}
+
+input[type="submit"] {
 	background: #4EBBB5;
 	color: white;
 	width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+	width: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+select:selected {
+	color: #fff;
 }

@@ -66,6 +66,10 @@ footer {
 	text-align: center;
 }
 
+.copyright {
+	font-style: italic;
+}
+
 /* ---- Form Styling ---- */
 
 input[type="text"],
@@ -101,6 +105,10 @@ legend {
 	width: 100%;
 }
 
+input[placeholder="Required"] {
+	direction: ltr;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -122,10 +130,6 @@ input[type="radio"] {
 	margin-bottom: 10px;
 }
 
-select:selected {
-	color: #fff;
-}
-
 /* ---- Media Queries ---- */
 
 @media (min-width: 768px) {
@@ -143,14 +147,24 @@ select:selected {
 		float: right;
 	}
 
-	/* 
-	label:not("other_topics") {
-		float: left;
-	}
-	*/
-
 	textarea {
 		width: 100%;
+	}
+
+	label{
+		display: inline-block;
+		width: 25%;
+		margin-bottom: 48px;
+		padding-top: 18px;
+	}
+
+	#other_topics {
+		width: 100%;
+	}
+
+	label[for="other_topics"] {
+		width: 100%;
+		margin-bottom: 0;
 	}
 
 }

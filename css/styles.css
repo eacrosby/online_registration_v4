@@ -38,11 +38,14 @@ h2 {
 	color: #2d3945;
 	text-align: center;
 	margin-top: 1.5em;
-	font-size: 1.2em;
+	font-size: 1.8em;
+    margin-bottom: 0;
 }
 
 h2 + p {
 	text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 div + p {
@@ -86,6 +89,7 @@ textarea {
 	margin: 5px 0 .8em;
 	width: 100%;
 	font-family: 'Rokkitt', serif;
+    transition: background-color 0.7s ease;
 }
 
 select {
@@ -96,13 +100,19 @@ fieldset {
 	border: none;
 }
 
+.color {
+    background-color: #fafafa;
+    padding: 10px 10px 2px;
+}
+
 legend {
 	color: #2d3945;
 	font-size: 1.2em;
 	font-weight: 700;
-	padding-top: 1em;
+	padding-top: 2em;
 	border-top: solid 2px #2d3945;
 	width: 100%;
+    margin-top: 1em;
 }
 
 input[placeholder="Required"] {
@@ -114,12 +124,14 @@ select:focus,
 textarea:focus {
 	border: 1px solid #2D3945;
 	text-align: left;
+    background-color: floralwhite;
 }
 
 input[type="submit"] {
 	background: #4EBBB5;
 	color: white;
 	width: 100%;
+    margin-top: 15px;
 }
 
 input[type="checkbox"],

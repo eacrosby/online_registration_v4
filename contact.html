@@ -59,14 +59,18 @@
 				<legend>Newsletter</legend>
                 <div class="color">
 				<p class="font">Select the newsletters you would like to recieve</p>
-				<input type="checkbox" name="newsletter" value="html_news">HTML News<br>
-				<input type="checkbox" name="newsletter" value="css">CSS News<br>
-				<input type="checkbox" name="newsletter" value="jscript_news">Javascript News
+                    <input type="checkbox" name="newsletter" id="html_news" value="html_news">
+                    <label for="html_news" class="radiocheck">HTML News</label><br>
+                    <input type="checkbox" name="newsletter" id="css_news" value="css">
+                    <label for="css_news" class="radiocheck">CSS News</label><br>
+                    <input type="checkbox" name="newsletter" id="java_news" value="jscript_news">
+                    <label for="java_news" class="radiocheck">Javascript News</label>
 				
 				<p>Newsletter format</p>
-				<input type="radio" name="format" value="html">HTML<br>
-				<input type="radio" name="format" value="plain">Plain text<br>
-				<br>
+				<input type="radio" name="format" id="html_format" value="html">
+                    <label for="html_format" class="radiocheck">HTML</label><br>
+				<input type="radio" name="format" id="plain_format" value="plain">
+                    <label for="plain_format" class="radiocheck">Plain text</label>
 				<label for="other_topics">Other topics you'd like to hear about</label>
 				<textarea id="other_topics" name="other_topics"></textarea>
                     </div>
